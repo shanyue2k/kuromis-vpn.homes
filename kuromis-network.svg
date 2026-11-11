@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Kuromis 库洛米 IEPL 全球专线与加密隧道架构图">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#2e1065" stop-opacity="0.6"/>
+      <stop offset="48%" stop-color="#0f172a" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#07070d" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="coreOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#9333ea" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fiberCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="fiberPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="cardGlass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#090913" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="neonBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="isoGrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(168,85,247,0.09)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="675" fill="#07070d"/>
+  <rect width="1200" height="675" fill="url(#bgGlow)"/>
+  <rect width="1200" height="675" fill="url(#isoGrid)"/>
+
+  <!-- Ambient Orbital Rings -->
+  <ellipse cx="600" cy="340" rx="430" ry="165" fill="none" stroke="rgba(34,211,238,0.16)" stroke-width="1.5" stroke-dasharray="8 10"/>
+  <ellipse cx="600" cy="340" rx="310" ry="118" fill="none" stroke="rgba(192,132,252,0.28)" stroke-width="1.5"/>
+  <ellipse cx="600" cy="340" rx="205" ry="76" fill="none" stroke="rgba(34,211,238,0.4)" stroke-width="2" filter="url(#neonBlur)"/>
+
+  <!-- High-Speed Fiber Arcs -->
+  <path d="M 225 220 Q 410 120 600 320" fill="none" stroke="url(#fiberCyan)" stroke-width="3" filter="url(#neonBlur)"/>
+  <path d="M 225 450 Q 400 470 600 350" fill="none" stroke="url(#fiberPurple)" stroke-width="2.6" filter="url(#neonBlur)"/>
+  <path d="M 975 215 Q 790 125 600 320" fill="none" stroke="url(#fiberCyan)" stroke-width="3" filter="url(#neonBlur)"/>
+  <path d="M 975 455 Q 795 470 600 350" fill="none" stroke="url(#fiberPurple)" stroke-width="2.6" filter="url(#neonBlur)"/>
+  <path d="M 225 220 Q 600 70 975 215" fill="none" stroke="rgba(34,211,238,0.25)" stroke-width="1.4" stroke-dasharray="6 6"/>
+  <path d="M 225 450 Q 600 580 975 455" fill="none" stroke="rgba(192,132,252,0.25)" stroke-width="1.4" stroke-dasharray="6 6"/>
+
+  <!-- Satellite Node Pedestals (4 Corners) -->
+  <!-- Node Top-Left: HK IEPL -->
+  <g transform="translate(135, 165)">
+    <rect width="180" height="96" rx="14" fill="url(#cardGlass)" stroke="rgba(34,211,238,0.45)" stroke-width="1.5"/>
+    <circle cx="28" cy="32" r="7" fill="#10b981" filter="url(#neonBlur)"/>
+    <text x="48" y="37" fill="#f5f3ff" font-family="system-ui, sans-serif" font-size="16" font-weight="700">HK IEPL 专线</text>
+    <text x="22" y="64" fill="#22d3ee" font-family="ui-monospace, monospace" font-size="14" font-weight="700">18 ms · 10Gbps</text>
+    <rect x="22" y="76" width="136" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+    <rect x="22" y="76" width="118" height="4" rx="2" fill="#22d3ee"/>
+  </g>
+
+  <!-- Node Bottom-Left: JP BGP -->
+  <g transform="translate(135, 410)">
+    <rect width="180" height="96" rx="14" fill="url(#cardGlass)" stroke="rgba(192,132,252,0.45)" stroke-width="1.5"/>
+    <circle cx="28" cy="32" r="7" fill="#10b981" filter="url(#neonBlur)"/>
+    <text x="48" y="37" fill="#f5f3ff" font-family="system-ui, sans-serif" font-size="16" font-weight="700">JP 东京原生</text>
+    <text x="22" y="64" fill="#c084fc" font-family="ui-monospace, monospace" font-size="14" font-weight="700">34 ms · 零丢包</text>
+    <rect x="22" y="76" width="136" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+    <rect x="22" y="76" width="108" height="4" rx="2" fill="#c084fc"/>
+  </g>
+
+  <!-- Node Top-Right: SG Node -->
+  <g transform="translate(885, 165)">
+    <rect width="180" height="96" rx="14" fill="url(#cardGlass)" stroke="rgba(34,211,238,0.45)" stroke-width="1.5"/>
+    <circle cx="28" cy="32" r="7" fill="#10b981" filter="url(#neonBlur)"/>
+    <text x="48" y="37" fill="#f5f3ff" font-family="system-ui, sans-serif" font-size="16" font-weight="700">SG 新加坡节点</text>
+    <text x="22" y="64" fill="#22d3ee" font-family="ui-monospace, monospace" font-size="14" font-weight="700">42 ms · 多线冗余</text>
+    <rect x="22" y="76" width="136" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+    <rect x="22" y="76" width="112" height="4" rx="2" fill="#22d3ee"/>
+  </g>
+
+  <!-- Node Bottom-Right: US Residential -->
+  <g transform="translate(885, 410)">
+    <rect width="180" height="96" rx="14" fill="url(#cardGlass)" stroke="rgba(192,132,252,0.45)" stroke-width="1.5"/>
+    <circle cx="28" cy="32" r="7" fill="#10b981" filter="url(#neonBlur)"/>
+    <text x="48" y="37" fill="#f5f3ff" font-family="system-ui, sans-serif" font-size="16" font-weight="700">US 原生纯净 IP</text>
+    <text x="22" y="64" fill="#c084fc" font-family="ui-monospace, monospace" font-size="14" font-weight="700">AI 防风控 · 全解锁</text>
+    <rect x="22" y="76" width="136" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+    <rect x="22" y="76" width="124" height="4" rx="2" fill="#c084fc"/>
+  </g>
+
+  <!-- Central Kuromis Core Hub + Encrypted Shield -->
+  <circle cx="600" cy="335" r="145" fill="url(#coreOrb)" opacity="0.45"/>
+  <g transform="translate(600, 335)">
+    <!-- Isometric Hex Core -->
+    <polygon points="0,-96 84,-48 84,48 0,96 -84,48 -84,-48" fill="url(#cardGlass)" stroke="#c084fc" stroke-width="2.5" filter="url(#neonBlur)"/>
+    <polygon points="0,-76 66,-38 66,38 0,76 -66,38 -66,-38" fill="none" stroke="rgba(34,211,238,0.65)" stroke-width="1.5"/>
+    <!-- Shield Lock Emblem -->
+    <path d="M 0 -46 L 34 -32 L 34 6 C 34 28 18 44 0 52 C -18 44 -34 28 -34 6 L -34 -32 Z" fill="rgba(147,51,234,0.28)" stroke="#22d3ee" stroke-width="2.2"/>
+    <rect x="-12" y="-4" width="24" height="20" rx="4" fill="#f5f3ff"/>
+    <path d="M -7 -4 L -7 -12 A 7 7 0 0 1 7 -12 L 7 -4" fill="none" stroke="#f5f3ff" stroke-width="3"/>
+    <circle cx="0" cy="6" r="2.5" fill="#9333ea"/>
+  </g>
+
+  <!-- Floating Status Badges -->
+  <g transform="translate(465, 558)">
+    <rect width="270" height="42" rx="21" fill="rgba(15,16,26,0.9)" stroke="rgba(34,211,238,0.35)" stroke-width="1.2"/>
+    <circle cx="24" cy="21" r="5" fill="#10b981"/>
+    <text x="40" y="26" fill="#e9d5ff" font-family="system-ui, sans-serif" font-size="14" font-weight="600">TLS 1.3 + AEAD 加密 · 严格零日志</text>
+  </g>
+</svg>
